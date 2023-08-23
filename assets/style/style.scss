@@ -1,0 +1,91 @@
+@import"./fonts.scss";
+
+@import"./reset.scss";
+// BASE CONF
+:root {
+    --dark-background-color: #252B42;
+    --disabled-element-color: #8EC2F2;
+    --light-color: #FFFFFF;
+    --primary-color: #FFA62B;
+    --second-text-color: #737373;
+    --secondary-color-1: #00A0C1;
+    --secondary-color-2: #16697A;
+    --text-color: #252B42;
+    --light-bg-color: #fafafa;
+    --grey-color: #252B42;
+    --light-blue-color: #21A6DF;
+    --dark-blue-color: #335BF5;
+    --light-grey-color: #DEDEDE;
+    --hot-red-color: #E42F08;
+    --violet-color: #E51F5A;
+    --usual-grey-color: #F3F3F3;
+    --light-white-color: #F9F9F9;
+}
+
+
+body{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1080px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.aling-center{
+    align-items: center;
+}
+
+.justify{
+    &-center{
+        justify-content: center
+    }
+
+    &-between{
+        justify-content: space-between;
+    }
+}
+// BASE CONF
+
+// HEADER SECTION
+.header{
+    position: absolute;
+    width: 100%;
+    top: 36px;
+    &__logo{
+font-size: 24px;
+font-weight: 700;
+line-height: 32px; 
+letter-spacing: 0.1px;
+margin-right: 117px;
+display: inline-block;
+color:var(--text-color)
+    }
+
+    &__link{
+        color: var(--second-text-color, #737373);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        &:not(:last-child){
+            margin-right: 21px;
+        }
+    }
+}
+
+
+// HEADER SECTION
+
+// HERO SECTION
+.hero{
+    height: 100vh;
+    background: url(../img/hero-bg.jpg) no-repeat center/cover;
+}
+
+// HERO SECTION
